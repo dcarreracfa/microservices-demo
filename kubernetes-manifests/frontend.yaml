@@ -26,6 +26,7 @@ spec:
         app: frontend
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        sidecar.speedscale.com/inject: "true"
     spec:
       serviceAccountName: default
       securityContext:
